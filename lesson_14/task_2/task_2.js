@@ -49,4 +49,4 @@ function getProd(str) {
 }
 
 
-console.log('====== ', findPartMaxProd(8));
+console.log('====== ', findPartMaxProd(100));
