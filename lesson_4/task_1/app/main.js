@@ -1,11 +1,5 @@
 cars //Массив с объектами
 
-let cars2 = [];
-
-for (let i = 0; i < 50; i++) {
-  cars2.push(cars[i]);
-}
-
 function countColor(carsArr){
    
     let colorArr = [];
