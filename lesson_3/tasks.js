@@ -37,9 +37,7 @@ function myLastIndexOf (str1, str2, position) {
     return  resultIndex.length === 0 ? -1 : resultIndex[resultIndex.length - 1];
 }
 
-// function myArguments() {
-//
-// }
+console.log(myLastIndexOf('Hello world world', 'worldsdf'));
 
 function strIncludeStr(str1, str2, pos) {
     let helpStr = '';
@@ -240,7 +238,7 @@ function mySubstring(string, indStart, length) {
 //console.log('result string = ', mySubstring('Hello world!', 11, -1)); //
 //console.log('result string = ', mySubstring('Hello world!', 12, 2)); //
 //console.log('result string = ', mySubstring('Hello world!', -12, 2)); //
-//console.log('result string = ', mySubstring('Hello world!', 12)); //
+console.log('result string = ', mySubstring('Hello world!', 12)); //
 //console.log('result string = ', mySubstring('Hello world!', -12)); //
 //console.log('result string = ', mySubstring('Hello world!', 5, 5)); //
 
