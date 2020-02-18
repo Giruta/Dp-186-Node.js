@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function myPop(arr) {
+            arr.length = arr.length - 1;
+            
+            return arr;
+        }
+
+        function myPush(arr, el) {
+            arr[arr.length] = el;
+
+            return arr;
+        }
+
+        function myShift(arr) {
+            for (let i = 0; i < arr.length - 1; i++) {
+                arr[i] = array[i + 1];
+            }
+            arr.length = arr.length - 1;
+
+            return arr;
+        }
+
+        function myUnShift(arr, el) {
+            for (let i = arr.length; i >= 1; i--) {
+                arr[i] = array[i - 1];
+            }
+            arr[0] = el;
+
+            return arr;
+        }
+
+        function concat() {
+            
+        }
+
+        function myMap(arr) {
+            let resArr = arr.reduce((acc, cur) => {   
+                acc.push(cur[0]);
+                
+                return acc;
+            },[]);
+            
+            return resArr;
+        }
+
+        function myFilter(arr) {
+            let resArr = arr.reduce((acc, cur) => {   
+                if(cur[0].toLowerCase() == 'а') {
+                    acc.push(cur);
+                }    
+                
+                return acc;
+            },[]);
+            
+            return resArr;
+        }
+
+        function myForEach(arr) {
+            let resArr = arr.reduce((acc, cur, i, array) => {   
+                
+                acc.push(`${i + 1}: ${cur};`);
+                
+                return acc;
+            },[]);
+            
+            return resArr;
+        }
+
+        // ['Яблоко', 'Банан', 'Ананас'].forEach((el,i,arr) => arr[i] = `${i + 1}: ${el};`);
+
+        const array = [1, 4, 5, 7, 8, 67];
+        const arrayWords = ['Яблоко', 'Банан', 'Ананас'];
+
+        // console.log('arr = ', myPop(array));
+        // console.log('arrPOP = ', myPop(array));
+        // console.log('arrPUSH = ', myPush(array, 87));
+        // console.log('arrSHIFT = ', myShift(array));
+        //console.log('arrUNSHIFT = ', myUnShift(array, 999));
+
+        //console.log('myMap = ', myMap(arrayWords));
+        //console.log('myFilter = ', myFilter(arrayWords));
+        console.log('myForEach = ', myForEach(arrayWords));
+
+
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
