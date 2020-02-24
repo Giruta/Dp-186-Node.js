@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    button {
+        width: 80%;
+        background-color:dodgerblue;
+        color: floralwhite;
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 36px;
+        outline: none;
+        border: none;
+    }
+    button:hover {
+        box-shadow: 5px 5px 17px rgba(37, 33, 33, 0.78);
+    }
+    div {
+        padding: 20px;
+        font-size: 24px;
+    }
+    input {
+        width: 50%;
+        padding: 10px;
+        font-size: 20px;
+        color: dodgerblue;
+    }
+</style>
+<body>
+    <div>
+        <div>
+            <button onclick="loadUsers();">Show results</button>
+        </div>
+        <div>
+            <label for="young">The youngest user is </label>
+            <input type="text" disabled id="young">
+        </div>
+        <div>
+            <label for="old">The oldest user is </label>
+            <input type="text" disabled id="old">
+        </div>
+        <div>
+            <label for="menNumber">The number of men in the set is </label>
+            <input type="number" disabled id="menNumber">
+        </div>
+        <div>
+            <label for="womenNumber">The number of women in the set is </label>
+            <input type="number" disabled id="womenNumber">
+        </div>
+        <div>
+            <label for="menAverageAge">The average age of men in the set is </label>
+            <input type="number" disabled id="menAverageAge">
+        </div>
+        <div>
+            <label for="womenAverageAge">The average age of women in the set is</label>
+            <input type="number" disabled id="womenAverageAge">
+        </div>
+        <div>
+            <label for="city">The city with the most users in the set is </label>
+            <input type="text" disabled id="city">
+        </div>
+    </div>    
+    <script src="app/task_1.js"></script>
+    <script src="app/task_2.js"></script>
+    <script src="app/task_3.js"></script>
+</body>
+</html>
