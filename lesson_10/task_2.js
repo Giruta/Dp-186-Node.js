@@ -9,7 +9,7 @@ function countdown (millisecs) {
    return `${millisecs<0?'-':'+'}${hours}:${minutes}:${seconds}`
 
 }
-console.log('result string = ', countdown(-154800000)); //'-43:00:00'
+console.log('result string = ', countdown(-154822000)); //'-43:00:00'
 console.log('result string = ', countdown(0)); //'+00:00:00'
 console.log('result string = ', countdown(61000)); //'+00:01:01'
 console.log('result string = ', countdown(360000000)); //'+100:00:00'
